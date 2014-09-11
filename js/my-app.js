@@ -11,11 +11,7 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-var token = tokenStore['fbtoken'],
-            loginStatus = {};
-if (token) {alert('access token present - show home page');}
-else {alert('no access token - show login button');}
-
+getLoginStatus();
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 askLocation();

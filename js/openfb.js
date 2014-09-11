@@ -71,8 +71,10 @@ var openFB = (function () {
         if (token) {
             loginStatus.status = 'connected';
             loginStatus.authResponse = {token: token};
+			alert('connected with an active token - show deals');
         } else {
             loginStatus.status = 'unknown';
+			alert('not connected - do not show home');
         }
         if (callback) callback(loginStatus);
     }
