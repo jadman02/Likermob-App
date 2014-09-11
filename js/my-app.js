@@ -11,6 +11,8 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
+if (token) {alert('access token present - show home page');}
+else {alert('no access token - show login button');}
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
