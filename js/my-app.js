@@ -6,13 +6,10 @@ var myApp = new Framework7({
 // Export selectors engine
 var $$ = Dom7;
 
-
 //Now we add our callback for initial page
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-login();
-navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 askLocation();
 functionEmpty();

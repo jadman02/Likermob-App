@@ -121,6 +121,8 @@
 <br/><br/>
 <a href="#" class="button" onclick="loginStatus()">Is user logged?</a>
 
+<a href="about.html">About HTML</a>
+
 <div id="status"></div>
 
 <p id="geolocation">Finding geolocation...</p>
@@ -227,14 +229,6 @@
                 }, {scope: 'email,read_stream,publish_stream'});
     }
 
-
-function loginStatus() {
-	openFB.getLoginstatus(
-		function(response) {
-			alert(response);
-			}
-		);
-	}
 
 
     function getInfo() {
