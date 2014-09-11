@@ -216,7 +216,7 @@
                 function(response) {
                     if(response.status === 'connected') {
                         alert('Facebook login succeeded, got access token: ' + response.authResponse.token);
-						alert(tokenStore);
+						alert('second alert');
                     } else {
                         alert('Facebook login failed: ' + response.error);
                     }
