@@ -121,6 +121,8 @@
 <br/><br/>
 <a href="#" class="button" onclick="userLoginStatus()">Is user logged?</a>
 
+<div id="status"></div>
+
 <p id="geolocation">Finding geolocation...</p>
 
 <!--
@@ -217,7 +219,7 @@
                 function(response) {
                     if(response.status === 'connected') {
                         alert('Facebook login succeeded, got access token: ' + response.authResponse.token);
-						
+						document.getElementById('status').innerHTML = 'use is logged';
                     } else {
                         alert('Facebook login failed: ' + response.error);
                     }
