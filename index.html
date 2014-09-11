@@ -224,16 +224,6 @@
                 }, {scope: 'email,read_stream,publish_stream'});
     }
 
-
-function userLoginStatus() {
-
-        if (loginCallback) {
-			alert('user is connected');
-        } else {
-			alert('user is not connected');
-        }
-    }
-
     function getInfo() {
         openFB.api({
             path: '/me',
