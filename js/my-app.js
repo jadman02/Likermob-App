@@ -1,10 +1,15 @@
 // Initialize your app
+
 var myApp = new Framework7({
   init: false //Disable App's automatica initialization
 });
 
 // Export selectors engine
 var $$ = Dom7;
+
+
+
+
 
 //Now we add our callback for initial page
 myApp.onPageInit('index', function (page) {
@@ -28,8 +33,16 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-// Load page from about.html file to main View:
-mainView.loadPage('about.html');
+
+var register = localStorage.getItem('register');
+if (register) {alert('register exists');}
+else {
+
+mainView.loadPage('register.html');
+var mySlider = myApp.slider('.slider-container', {
+    pagination:'.slider-pagination'
+  });	
+}
 
 
 // Callbacks to run specific code for specific pages, for example for About page:
