@@ -28,7 +28,8 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-
+// Load page from about.html file to main View:
+mainView.loadPage('about.html');
 
 
 // Callbacks to run specific code for specific pages, for example for About page:
