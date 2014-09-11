@@ -117,6 +117,8 @@
         <span class="preloader" style="width:31px; height:31px"></span>
         </div>
 
+<div id="status"></div>
+
 
 <p id="geolocation">Finding geolocation...</p>
 
@@ -214,6 +216,7 @@
                 function(response) {
                     if(response.status === 'connected') {
                         alert('Facebook login succeeded, got access token: ' + response.authResponse.token);
+						document.getElementById('status').innerHTML = 'Logged in user';
                     } else {
                         alert('Facebook login failed: ' + response.error);
                     }
