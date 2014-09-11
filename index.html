@@ -226,14 +226,10 @@
 
 
 function userLoginStatus() {
-        var token = tokenStore['fbtoken'],
-            loginStatus = {};
-        if (token) {
-            loginStatus.status = 'connected';
-            loginStatus.authResponse = {token: token};
+
+        if (loginCallback) {
 			alert('user is connected');
         } else {
-            loginStatus.status = 'unknown';
 			alert('user is not connected');
         }
     }
