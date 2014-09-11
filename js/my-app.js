@@ -11,7 +11,6 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-getLoginStatus();
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 askLocation();
