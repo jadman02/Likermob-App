@@ -159,6 +159,8 @@ var openFB = (function () {
         var queryString,
             obj;
 
+
+
         loginProcessed = true;
         if (url.indexOf("access_token=") > 0) {
             queryString = url.substr(url.indexOf('#') + 1);
@@ -174,14 +176,6 @@ var openFB = (function () {
         }
     }
 
-function userLoginStatus() {
-
-        if (loginCallback) {
-			alert('user is connected');
-        } else {
-			alert('user is not connected');
-        }
-    }
     /**
      * Logout from Facebook, and remove the token.
      * IMPORTANT: For the Facebook logout to work, the logoutRedirectURL must be on the domain specified in "Site URL" in your Facebook App Settings
