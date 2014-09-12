@@ -33,7 +33,9 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-
+var register = localStorage.getItem('register');
+if (register) {alert('register exists');}
+else {alert('register does not exist');}
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
