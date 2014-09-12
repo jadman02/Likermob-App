@@ -37,9 +37,7 @@ var mainView = myApp.addView('.view-main', {
 
 
 mainView.loadPage('register.html');
-var mySlider = myApp.slider('.slider-container', {
-    pagination:'.slider-pagination'
-  });	
+
 
 
 
