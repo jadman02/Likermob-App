@@ -7,8 +7,7 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 
-var register = localStorage.getItem('register');
-if (register) {
+
 	
 	//Now we add our callback for initial page
 myApp.onPageInit('index', function (page) {
@@ -22,23 +21,9 @@ functionEmpty();
 
 
 });
+
 	
-}
-else {
 	
-		//Now we add our callback for initial page
-myApp.onPageInit('register', function (page) {
-  //Do something here with home page
-
-
-alert('register page loaded');
-
-
-
-
-});
-	
-}	
 
 
 
@@ -51,13 +36,24 @@ myApp.init();
 
 
 	
-	// Add view
+
+
+
+
+var register = localStorage.getItem('register');
+if (register) {
+	
+		// Add view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
-
-
+	
+}
+else {
+var anotherView = myApp.addView('.another-view');
+anotherView.hideNavbar();
+}
 
 
 
