@@ -8,11 +8,9 @@ var $$ = Dom7;
 
 
 var register = localStorage.getItem('register');
-if (register) {alert('register exists');}
-else {alert('register does not exists');}	
-
-
-//Now we add our callback for initial page
+if (register) {
+	
+	//Now we add our callback for initial page
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
@@ -24,6 +22,26 @@ functionEmpty();
 
 
 });
+	
+}
+else {
+	
+		//Now we add our callback for initial page
+myApp.onPageInit('register', function (page) {
+  //Do something here with home page
+
+
+alert('register page loaded');
+
+
+
+
+});
+	
+}	
+
+
+
  
 //And now we initialize app
 myApp.init();
