@@ -34,13 +34,13 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-var register = localStorage.getItem('register');
-if (register) {alert('register exists');}
-else {
-alert('no register exists');
 
 
-}
+mainView.loadPage('register.html');
+var mySlider = myApp.slider('.slider-container', {
+    pagination:'.slider-pagination'
+  });	
+
 
 
 // Callbacks to run specific code for specific pages, for example for About page:
