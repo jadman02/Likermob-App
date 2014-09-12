@@ -7,7 +7,9 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 
-
+var register = localStorage.getItem('register');
+if (register) {alert('register exists');}
+else {alert('register does not exists');}	
 
 
 //Now we add our callback for initial page
@@ -29,9 +31,7 @@ myApp.init();
 
 
 
-var register = localStorage.getItem('register');
-if (register) {
-	
+
 	
 	// Add view
 var mainView = myApp.addView('.view-main', {
@@ -39,14 +39,9 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-}
-else {
-	
-	var anotherView = myApp.addView('.another-view');
-	anotherView.hideNavbar();
-	
-	
-}
+
+
+
 
 // Callbacks to run specific code for specific pages, for example for About page:
 
