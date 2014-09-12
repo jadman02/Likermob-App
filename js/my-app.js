@@ -34,9 +34,8 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-
-
 mainView.loadPage('register.html');
+mainView.hideNavbar();
 
 
 
