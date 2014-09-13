@@ -49,8 +49,7 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-// Load page from about.html file to main View:
-mainView.loadPage('register.html');
+document.getElementById('button1').click();
 
 
 
