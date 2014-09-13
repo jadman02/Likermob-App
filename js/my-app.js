@@ -44,15 +44,18 @@ var register = localStorage.getItem('register');
 if (register) {
 	
 		// Add view
+
+var anotherView = myApp.addView('.another-view');
+anotherView.hideNavbar();
+	
+}
+else {
+
+
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
-	
-}
-else {
-var anotherView = myApp.addView('.another-view');
-anotherView.hideNavbar();
 }
 
 
