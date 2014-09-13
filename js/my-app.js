@@ -49,7 +49,7 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-document.getElementById('button1').click();
+
 
 
 
