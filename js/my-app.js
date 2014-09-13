@@ -51,7 +51,8 @@ var mainView = myApp.addView('.view-main', {
 
 
 
-
+// Load page from about.html file to main View:
+mainView.loadPage('register.html');
 
 
 
