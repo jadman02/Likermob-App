@@ -34,6 +34,10 @@ myApp.init();
 
 
 
+var mainView = myApp.addView('.view-main', {
+    // Because we use fixed-through navbar we can enable dynamic navbar
+    dynamicNavbar: true
+});
 
 	
 
@@ -42,17 +46,18 @@ myApp.init();
 
 var register = localStorage.getItem('register');
 if (register) {}
-else {}	
-
-var mainView = myApp.addView('.view-main', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
-});
-
-
+else {
 
 // Load page from about.html file to main View:
 mainView.loadPage('register.html');
+mainView.hideNavbar();	
+	
+}	
+
+
+
+
+
 
 
 
