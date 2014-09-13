@@ -213,6 +213,7 @@
                     if(response.status === 'connected') {
                         alert('Facebook login succeeded, got access token: ' + response.authResponse.token);
 						document.getElementById('status').innerHTML = 'user is logged';
+						localStorage.setItem("register", "register");
 						
                     } else {
                         alert('Facebook login failed: ' + response.error);
