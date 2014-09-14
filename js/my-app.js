@@ -76,7 +76,8 @@ myApp.onPageInit('about', function (page) {
 
 myApp.onPageInit('location', function (page) {
 
-$( "#places" ).change(function() {
+alert("On location page");
+$$( "#places" ).change(function() {
   alert( "Handler for .change() called." );
 });
 
