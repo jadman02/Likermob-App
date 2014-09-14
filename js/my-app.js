@@ -75,14 +75,7 @@ myApp.onPageInit('about', function (page) {
 });
 
 
-myApp.onPageInit('location', function (page) {
 
-alert("on location page");
-$( "#places_button" ).change(function() {
-  alert( "Handler for .change() called." );
-});
-
-});
 
 
 
