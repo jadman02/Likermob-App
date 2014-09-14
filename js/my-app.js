@@ -74,14 +74,14 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
+
 myApp.onPageInit('location', function (page) {
 
-alert("On location page");
-$$( "#places" ).change(function() {
+
+$( "#places_button" ).change(function() {
   alert( "Handler for .change() called." );
 });
 
-    });
 });
 
 
