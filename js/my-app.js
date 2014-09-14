@@ -47,7 +47,7 @@ var mainView = myApp.addView('.view-main', {
 var register = localStorage.getItem('register');
 if (register) {
 
-mainView.loadPage('register.html');
+mainView.loadPage('location.html');
 	
 }
 else {
