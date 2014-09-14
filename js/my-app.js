@@ -76,7 +76,7 @@ myApp.onPageInit('about', function (page) {
 
 myApp.onPageInit('location', function (page) {
 
-$( "#places_button" ).change(function() {
+$( "#places" ).change(function() {
   alert( "Handler for .change() called." );
 });
 
