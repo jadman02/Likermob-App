@@ -47,7 +47,7 @@ var mainView = myApp.addView('.view-main', {
 var register = localStorage.getItem('register');
 if (register) {
 
-mainView.loadPage('register.html');
+
 	
 }
 else {
@@ -77,7 +77,7 @@ myApp.onPageInit('about', function (page) {
 
 myApp.onPageInit('location', function (page) {
 
-
+alert("on location page");
 $( "#places_button" ).change(function() {
   alert( "Handler for .change() called." );
 });
