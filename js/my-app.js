@@ -76,7 +76,7 @@ $$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div c
 
 //Get Latitude and Longitude onclick
 
-$$('#resulty li').on('click', function (e) {
+$$('#resulty li').on('touchstart', function (e) {
     alert('clicked');
 });
 
