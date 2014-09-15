@@ -63,7 +63,7 @@ mainView.loadPage('register.html');
 myApp.onPageInit('location', function (page) {
 
 var n = document.getElementById("numPeople"),
-textsearch = document.getElementById('numPeople').value
+textsearch = document.getElementById("numPeople").value
     r = document.getElementById("resulty");
 
 n.addEventListener("keyup", function(e) {
