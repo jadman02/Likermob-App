@@ -64,7 +64,7 @@ myApp.onPageInit('location', function (page) {
 
 alert('Location page reached');
     });
-});
+
 
 
 
