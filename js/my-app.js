@@ -253,7 +253,7 @@ function savePosition(place_id) {
 
 
 	
-alert('place_id');	
+alert(place_id);	
 	
 	
 }
