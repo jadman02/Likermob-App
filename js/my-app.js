@@ -247,6 +247,8 @@ function askLocation() {
     }
 
 function savePosition(place_id) {
+
+va place_id = place_id;
 	
 alert(place_id);	
 	
