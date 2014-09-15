@@ -254,7 +254,7 @@ function savePosition(place_id) {
 
 $$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?placeid='+ place_id +'&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
  
-alert('result:' + response.result.geometry.location.lat[0]);
+alert('result:' + response.result.geometry.location.lat);
 
 });    	
 alert(place_id);	
