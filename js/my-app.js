@@ -60,7 +60,11 @@ mainView.loadPage('register.html');
 
 
 
+myApp.onPageInit('about', function (page) {
 
+alert('Location page reached');
+    });
+});
 
 
 
