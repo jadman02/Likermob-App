@@ -62,11 +62,11 @@ mainView.loadPage('register.html');
 
 myApp.onPageInit('location', function (page) {
 
-$$(document).ready(function(){
-  $$("#numPeople").keyup(function(){
+
+  $$('#numPeople').keyup(function(){
     alert(this.value);
   });
-});
+
 
     });
 
