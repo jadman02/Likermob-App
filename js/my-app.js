@@ -67,7 +67,7 @@ $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='
 for (i = 0; i < 5; i++) 
 { 
 
-$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title">' + response.predictions[i].place_id + ',' + response.predictions[i].description + '</div></div></li>');
+$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title">' + response.predictions[i].description + ',' + response.predictions[i].place_id + '</div></div></li>');
 	
 
 
