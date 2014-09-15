@@ -62,14 +62,11 @@ mainView.loadPage('register.html');
 
 myApp.onPageInit('location', function (page) {
 
-var n = document.getElementById("numPeople"),
-    r = document.getElementById("resulty");
-
-var textsearch = $$("#numPeople").val(); 
-
-n.addEventListener("keyup", function(e) {
-    r.innerHTML += "you typed:" + textsearch;
-}, false);
+$$(document).ready(function(){
+  $$("#numPeople").keyup(function(){
+    alert(this.value);
+  });
+});
 
     });
 
