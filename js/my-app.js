@@ -61,25 +61,26 @@ mainView.loadPage('register.html');
 
 
 myApp.onPageInit('location', function (page) {
+
+//Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
 $$("#resulty li").remove();
 $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+ this.value +'&types=(cities)&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
 for (i = 0; i < 5; i++) 
 { 
-
 $$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title">' + response.predictions[i].description + ',' + response.predictions[i].place_id + '</div></div></li>');
-	
-
-
-	
 }
-
-
 });    
     
-    
-    
 });
+
+//Get Latitude and Longitude onclick
+
+$$('#resulty li').on('click', function (e) {
+    alert('clicked');
+});
+
+	
 });
 
 
