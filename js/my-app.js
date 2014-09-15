@@ -61,14 +61,19 @@ mainView.loadPage('register.html');
 
 
 myApp.onPageInit('location', function (page) {
+$$('#numPeople').keyup(function(){
+
+$$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Vict&types=(cities)&language=pt_BR&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
+for (i = 0; i < 5; i++) 
+{ $$( '#resulty' ).append('success of call');}
 
 
-  $$('#numPeople').keyup(function(){
-    alert(this.value);
-  });
-
-
-    });
+});    
+    
+    
+    
+});
+});
 
 
 
