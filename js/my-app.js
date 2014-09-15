@@ -62,12 +62,12 @@ mainView.loadPage('register.html');
 
 myApp.onPageInit('location', function (page) {
 $$('#numPeople').keyup(function(){
-$$(".autocomplete_list li").remove();
+$$("#resulty li").remove();
 $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+ this.value +'&types=(cities)&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
 for (i = 0; i < 5; i++) 
 { 
 
-$$( '#resulty' ).append('<li class=".autocomplete_list">' + response.predictions[i].place_id + ',' + response.predictions[i].description + '</li>');
+$$( '#resulty' ).append('<li class=".autocomplete_list"><div class="item-content"><div class="item-inner"><div class="item-input">' + response.predictions[i].place_id + ',' + response.predictions[i].description + '</div></div></div></li>');
 	
 
 
