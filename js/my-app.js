@@ -71,7 +71,7 @@ for (i = 0; i < 5; i++)
 	
 
 	
-$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title button" onclick="savePosition(place_id)">' + response.predictions[i].description + '</div></div></li>');
+$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title button" onclick="savePosition(5555)">' + response.predictions[i].description + '</div></div></li>');
 }
 });    
     
