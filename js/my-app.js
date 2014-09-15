@@ -62,7 +62,13 @@ mainView.loadPage('register.html');
 
 myApp.onPageInit('location', function (page) {
 
-alert('Location page reached');
+var n = document.getElementById("numPeople"),
+    r = document.getElementById("resulty");
+
+n.addEventListener("keyup", function(e) {
+    r.innerHTML += "keyup event triggered <br/>";
+}, false);
+
     });
 
 
