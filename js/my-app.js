@@ -65,7 +65,7 @@ $$('#numPeople').keyup(function(){
 
 $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input=Vict&types=(cities)&language=pt_BR&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
 for (i = 0; i < 5; i++) 
-{ $$( '#resulty' ).append('success of call');}
+{ $$( '#resulty' ).append('success of call' + response[i][2] + response[i][2] + response[i][3]);}
 
 
 });    
