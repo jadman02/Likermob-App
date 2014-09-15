@@ -68,7 +68,7 @@ $$("#resulty li").remove();
 $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+ this.value +'&types=(cities)&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
 for (i = 0; i < 5; i++) 
 { 
-$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title button" onclick="savePosition()">' + response.predictions[i].description + ',' + response.predictions[i].place_id + '</div></div></li>');
+$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title button" onclick="savePosition0(' + response.predictions[i].place_id + ')">' + response.predictions[i].description + '</div></div></li>');
 }
 });    
     
@@ -246,9 +246,16 @@ function askLocation() {
                 'message: ' + error.message + '\n');
     }
 
-function savePosition() {
+function savePosition(place_id) {
 	
-alert("yes");	
+$$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?placeid='+ place_id +'&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
+for (i = 0; i < 5; i++) 
+{ 
+
+alert('lat:' + response.results[0].geometry.location.lat);
+
+}
+});  	
 	
 	
 }
