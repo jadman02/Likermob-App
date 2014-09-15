@@ -62,10 +62,19 @@ mainView.loadPage('register.html');
 
 myApp.onPageInit('location', function (page) {
 $$('#numPeople').keyup(function(){
-$$(".autocomplete_list").remove();
+$$(".autocomplete_list li").remove();
 $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+ this.value +'&types=(cities)&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
 for (i = 0; i < 5; i++) 
-{ $$( '#resulty' ).append('<li class=".autocomplete_list">' + response.predictions[i].description + '</li>');}
+{ 
+	
+$$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?placeid='+ + response.predictions[i].place_id +'ChIJN1t_tDeuEmsRUsoyG83frY4&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
+
+$$( '#resulty' ).append('<li class=".autocomplete_list">' + response.results[i].formatted_address + '</li>');	
+	
+});
+
+	
+}
 
 
 });    
