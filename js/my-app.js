@@ -266,6 +266,7 @@ $$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?placeid='+ p
 
 localStorage.setItem("latitude", response.result.geometry.location.lat);
 localStorage.setItem("longitude", response.result.geometry.location.lng);
+localStorage.setItem("position", response.result.formatted_address);
 
 alert (response.result.geometry.location.lng);
 
