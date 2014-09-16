@@ -102,6 +102,8 @@ $$('.item-title').on('click', function (e) {
 
 myApp.onPageInit('about', function (page) {
 
+alert('on about page');
+
 	$$('.create-page').on('click', function () {
         createContentPage();
     });
