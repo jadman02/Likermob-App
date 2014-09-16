@@ -66,7 +66,7 @@ mainView.loadPage('register.html');
 
 
 
-myApp.onPageInit('location', function (page) {
+myApp.onPageInit('index', function (page) {
 
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
