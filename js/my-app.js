@@ -27,6 +27,8 @@ myApp.onPageInit('location', function (page) {
 
 alert('on location page');
 
+document.getElementById("current_location").innerHTML = localStorage.getItem("position");
+
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
 $$("#resulty li").remove();
