@@ -47,7 +47,13 @@ var mainView = myApp.addView('.view-main', {
 var register = localStorage.getItem('register');
 if (register) {
 
-mainView.loadPage('location.html');
+if(latitude){}
+else {
+	
+mainView.loadPage('location.html');	
+}
+
+
 	
 }
 else {
