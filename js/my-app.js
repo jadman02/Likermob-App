@@ -23,6 +23,7 @@ functionEmpty();
 });
 
 	
+	
 myApp.onPageInit('location', function (page) {
 
 alert('on location page');
